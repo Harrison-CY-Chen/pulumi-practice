@@ -39,7 +39,7 @@ pulumi_practice_lambda = aws.lambda_.Function("pulumi-practice-lambda",
 ### 4. 執行部署驗證（Deploy）
 最後透過以下指令執行部署更新：
 ```bash
-pulumi up --yes
+pulumi up
 ```
 
 ### 5. 從 state 中移除資源
@@ -57,7 +57,7 @@ pulumi state delete <Lambda的URN> --yes #移除Lambda的URN
 ### 7. 刪除 Stack
 執行指令：
 ```bash
-pulumi destroy --stack dev --yes
+pulumi destroy --stack dev
 pulumi stack rm --stack dev
 ```
 
